@@ -1,0 +1,11 @@
+services:
+  ai-subtitle-worker:
+    build: .
+    env_file: .env
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./data:/data
+      # Optional cookies file for authenticated downloads:
+      # - ./cookies.txt:/run/secrets/cookies.txt:ro
+    restart: unless-stopped
