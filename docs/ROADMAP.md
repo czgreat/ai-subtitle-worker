@@ -1,31 +1,38 @@
 # Roadmap
 
-This public release is a cleaned, source-focused baseline. It is intended to be usable by developers, but each deployment still needs local configuration.
+**Language:** English | [中文](ROADMAP.zh-CN.md)
 
-## Complete enough to use
+This roadmap describes the public repository state for `ai-subtitle-worker`. It separates what is ready to use from what each user should complete in their own environment.
 
-- HTTP worker service is included
-- yt-dlp, ffmpeg, and faster-whisper pipeline is represented in code
-- Webhook callback is optional
-- Docker example is included
+## Complete Enough To Use
 
-## Needs local completion
+- Download/transcribe/render pipeline
+- Artifact storage
+- Webhook callback support
 
-- Enough CPU/RAM for chosen whisper model
-- ffmpeg and yt-dlp in runtime
-- Optional cookies file for authenticated downloads
-- Optional LLM provider for post-processing
+## Needs Local Completion
 
-## Suggested improvements
+- Add your own authentication policy before exposing publicly
+- Choose CPU/GPU runtime settings for your host
+- Tune downloader options for allowed sites
 
-- Add a minimal web upload page
-- Add task queue persistence for production
-- Adapt webhook payloads for another chat platform
-- Add GPU runtime documentation
+## Suggested Improvements
 
-## Documentation still worth adding
+- Add OpenAPI examples for dispatch payloads
+- Add queue persistence tests
+- Improve failure classification and retry behavior
+- Add deployment recipes for GPU hosts
 
-- Real screenshots or short demo videos.
-- A known-good production deployment example for a generic Linux host.
-- Troubleshooting notes collected from real user deployments.
+## Documentation Still Worth Adding
 
+- Screenshots or short screen recordings using non-private demo data.
+- A fuller API example page for common requests and responses.
+- Backup and restore notes for any persistent data path.
+- A troubleshooting page based on real public issues once users start deploying it.
+
+## Maintenance Notes
+
+- Keep public examples generic.
+- Keep English and Chinese instructions aligned.
+- Prefer small issues and pull requests so AI-assisted contributors can work safely.
+- Re-run sensitive-data scans before publishing new releases.
