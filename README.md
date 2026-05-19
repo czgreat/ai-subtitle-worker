@@ -18,6 +18,18 @@ AI Subtitle Worker exposes a small HTTP service around yt-dlp, ffmpeg, faster-wh
 - Outputs text, Markdown, DOCX, script Markdown, JSON, and downloadable artifacts
 - Optional webhook callback and optional LLM post-processing
 
+## Who This Is For
+
+- Users automating media-to-text jobs for content they are allowed to process
+- Bot builders that need a small HTTP transcription worker
+- Developers comparing CPU/GPU transcription deployment options
+
+## Not For
+
+- Downloading or processing media without permission
+- Public deployment without adding your own auth and rate limits
+- Long-running GPU workloads without host-specific tuning
+
 ## Current Public Release
 
 Ready to use:
@@ -98,8 +110,11 @@ curl http://localhost:8090/health
 | Topic | English | Chinese |
 |---|---|---|
 | Deployment | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | [docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md) |
+| Usage/API examples | [docs/USAGE_EXAMPLES.md](docs/USAGE_EXAMPLES.md) | [docs/USAGE_EXAMPLES.zh-CN.md](docs/USAGE_EXAMPLES.zh-CN.md) |
+| Screenshots | [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) | [docs/SCREENSHOTS.zh-CN.md](docs/SCREENSHOTS.zh-CN.md) |
 | AI handoff | [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md) | [docs/AI_HANDOFF.zh-CN.md](docs/AI_HANDOFF.zh-CN.md) |
 | Roadmap | [docs/ROADMAP.md](docs/ROADMAP.md) | [docs/ROADMAP.zh-CN.md](docs/ROADMAP.zh-CN.md) |
+| Changelog | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG.zh-CN.md](CHANGELOG.zh-CN.md) |
 
 ## AI-Assisted Development
 

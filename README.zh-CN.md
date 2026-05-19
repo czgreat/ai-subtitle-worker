@@ -18,6 +18,18 @@ AI Subtitle Worker 在 yt-dlp、ffmpeg、faster-whisper、产物渲染和可选�
 - 输出文本、Markdown、DOCX、脚本 Markdown、JSON 和可下载产物
 - 可选 webhook 回调和可选 LLM 后处理
 
+## 适合谁
+
+- 需要自动处理授权媒体转文本任务的用户
+- 需要 HTTP 转写 worker 的机器人开发者
+- 评估 CPU/GPU 转写部署方案的开发者
+
+## 不适合
+
+- 下载或处理未授权媒体
+- 未补自有鉴权和限速就公开部署
+- 未按宿主机调优就运行长期 GPU 任务
+
 ## 当前公开版状态
 
 已经可以使用：
@@ -98,8 +110,11 @@ curl http://localhost:8090/health
 | 主题 | 中文 | English |
 |---|---|---|
 | 部署 | [docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md) | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) |
+| 使用/API 示例 | [docs/USAGE_EXAMPLES.zh-CN.md](docs/USAGE_EXAMPLES.zh-CN.md) | [docs/USAGE_EXAMPLES.md](docs/USAGE_EXAMPLES.md) |
+| 截图 | [docs/SCREENSHOTS.zh-CN.md](docs/SCREENSHOTS.zh-CN.md) | [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) |
 | AI 接手 | [docs/AI_HANDOFF.zh-CN.md](docs/AI_HANDOFF.zh-CN.md) | [docs/AI_HANDOFF.md](docs/AI_HANDOFF.md) |
 | 路线图 | [docs/ROADMAP.zh-CN.md](docs/ROADMAP.zh-CN.md) | [docs/ROADMAP.md](docs/ROADMAP.md) |
+| 更新日志 | [CHANGELOG.zh-CN.md](CHANGELOG.zh-CN.md) | [CHANGELOG.md](CHANGELOG.md) |
 
 ## AI 辅助开发说明
 
